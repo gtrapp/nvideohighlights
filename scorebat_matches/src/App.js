@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DatatablePage from './Table.js'
+import _ from 'lodash';
 import './App.css';
 
 class App extends Component {
@@ -10,41 +11,30 @@ class App extends Component {
       isLoaded: false,
       columns: [
         {
-          label: 'Name',
-          field: 'name',
+          label: 'Match',
+          field: 'title',
+          sort: 'asc',
+          width: 270
+        },        
+        {
+          label: 'Team 1',
+          field: 'side1Name',
           sort: 'asc',
           width: 150
         },
         {
-          label: 'Position',
-          field: 'position',
+          label: 'Team 2',
+          field: 'side2Name',
+          sort: 'asc',
+          width: 150
+        },
+        {
+          label: 'League',
+          field: 'competitionName',
           sort: 'asc',
           width: 270
         },
-        {
-          label: 'Office',
-          field: 'office',
-          sort: 'asc',
-          width: 200
-        },
-        {
-          label: 'Age',
-          field: 'age',
-          sort: 'asc',
-          width: 100
-        },
-        {
-          label: 'Start date',
-          field: 'date',
-          sort: 'asc',
-          width: 150
-        },
-        {
-          label: 'Salary',
-          field: 'salary',
-          sort: 'asc',
-          width: 100
-        }
+        
       ],
       rows: [],
     };
@@ -55,7 +45,12 @@ class App extends Component {
       .then(res => res.json())
       .then(
         (result) => {
-          console.log(result);
+          _.forEach(result, (value, key) => {
+            value.competitionName = value.competition.name
+            value.side1Name = value.side1.name
+            value.side2Name = value.side2.name
+          });
+
           this.setState({
             isLoaded: true,
             rows: result

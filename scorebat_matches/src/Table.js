@@ -11,7 +11,7 @@ class DatatablePage extends Component{
       <MDBDataTable
         striped
         bordered
-        small
+        hover
         data={data}
       />
     );
