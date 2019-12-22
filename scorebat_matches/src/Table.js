@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 import { useTable, useSortBy } from 'react-table'
 
-import makeData from './makeData'
-
 const Styles = styled.div`
   padding: 1rem;
 
@@ -118,8 +116,6 @@ class DataTable extends Component {
         accessor: 'competitionName',
       },
     ]
-
-    const data = makeData(2000)
 
     return (
       <Styles>
