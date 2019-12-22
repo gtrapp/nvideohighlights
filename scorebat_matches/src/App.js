@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+
 import _ from 'lodash';
 import './App.css';
 
 import SearchBar from './SearchBar.js';
 import DataTable from './Table.js'
+import VideoSelector from './VideoSelector';
 
 class App extends Component {
   constructor(props) {
@@ -33,8 +35,10 @@ class App extends Component {
 
   render() {
     const { rows } = this.state;
+
     return (
       <div className="App">
+        <VideoSelector  />
         <SearchBar rows={rows} />
         <DataTable rows={rows} />
       </div>

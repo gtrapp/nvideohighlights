@@ -8,6 +8,7 @@ const Styles = styled.div`
   table {
     border-spacing: 0;
     border: 1px solid black;
+    margin: 0 auto;
 
     tr {
       :last-child {
@@ -52,7 +53,7 @@ function Table({ columns, data }) {
     getTableBodyProps,
     headerGroups,
     prepareRow,
-    page, 
+    page,
     canPreviousPage,
     canNextPage,
     pageOptions,
