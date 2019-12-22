@@ -5,7 +5,7 @@ import './App.css';
 
 import SearchBar from './SearchBar.js';
 import DataTable from './Table.js'
-import VideoSelector from './VideoSelector';
+import ReactPlayer from 'react-player'
 
 class App extends Component {
   constructor(props) {
@@ -38,7 +38,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <VideoSelector  />
+        <ReactPlayer url='https://youtu.be/fUpsta0bHEE' playing   style={{ margin: '0 auto', marginBottom: '20px'}} />
         <SearchBar rows={rows} />
         <DataTable rows={rows} />
       </div>

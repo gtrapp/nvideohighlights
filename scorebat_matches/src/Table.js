@@ -113,7 +113,8 @@ function Table({ columns, data }) {
           )}
         </tbody>
       </table>
-      <div className="pagination">
+
+      <div className="pagination" style={{ marginTop: '30px' }}>
         <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
           {'<<'}
         </button>{' '}

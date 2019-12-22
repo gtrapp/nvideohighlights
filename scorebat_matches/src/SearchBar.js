@@ -27,7 +27,9 @@ class SearchBar extends Component {
       return (
         <div>
           <form>
-                <input type="text" placeholder="Search" onChange={this.filterList}  />
+                <input type="text" placeholder="Search" onChange={this.filterList}
+                style={{ width: '500px', height: '20px' }}
+                />
           </form>
           <div>
             {
