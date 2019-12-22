@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import DataTable from './Table.js'
 import _ from 'lodash';
 import './App.css';
+
+import SearchBar from './SearchBar.js';
+import DataTable from './Table.js'
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      error: null,
-      isLoaded: false,
       rows: [],
     };
   }
@@ -25,23 +25,17 @@ class App extends Component {
           });
 
           this.setState({
-            isLoaded: true,
             rows: result
-          });
-        },
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error
           });
         }
       )
   }
 
   render() {
-    const { error, isLoaded, rows } = this.state;
+    const { rows } = this.state;
     return (
       <div className="App">
+        <SearchBar rows={rows} />
         <DataTable rows={rows} />
       </div>
     );
