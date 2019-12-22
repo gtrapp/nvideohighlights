@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DatatablePage from './Table.js'
+import DataTable from './Table.js'
 import _ from 'lodash';
 import './App.css';
 
@@ -69,7 +69,7 @@ class App extends Component {
     const { error, isLoaded, columns, rows } = this.state;
     return (
       <div className="App">
-        <DatatablePage columns={columns} rows={rows} />
+        <DataTable columns={columns} rows={rows} />
       </div>
     );
   }
