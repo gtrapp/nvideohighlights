@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react';
 import styled from 'styled-components'
 import { useTable, useSortBy } from 'react-table'
 
@@ -98,43 +98,35 @@ function Table({ columns, data }) {
   )
 }
 
-function DataTable() {
-  const columns = React.useMemo(
-    () => [
+class DataTable extends Component {
+  render() {
+    const columns = [
       {
-        Header: 'First Name',
-        accessor: 'firstName',
+        Header: 'Title',
+        accessor: 'title',
       },
       {
-        Header: 'Last Name',
-        accessor: 'lastName',
+        Header: 'Team1',
+        accessor: 'side1Name',
       },
       {
-        Header: 'Age',
-        accessor: 'age',
+        Header: 'Team2',
+        accessor: 'side2Name',
       },
       {
-        Header: 'Visits',
-        accessor: 'visits',
+        Header: 'League',
+        accessor: 'competitionName',
       },
-      {
-        Header: 'Status',
-        accessor: 'status',
-      },
-      {
-        Header: 'Profile Progress',
-        accessor: 'progress',
-      },
-    ],
-  )
+    ]
 
-  const data = React.useMemo(() => makeData(2000), [])
+    const data = makeData(2000)
 
-  return (
-    <Styles>
-      <Table columns={columns} data={data} />
-    </Styles>
-  )
+    return (
+      <Styles>
+        <Table columns={columns} data={this.props.rows} />
+      </Styles>
+    )
+  }
 }
 
 export default DataTable

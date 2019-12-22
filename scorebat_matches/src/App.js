@@ -9,33 +9,6 @@ class App extends Component {
     this.state = {
       error: null,
       isLoaded: false,
-      columns: [
-        {
-          label: 'Match',
-          field: 'title',
-          sort: 'asc',
-          width: 270
-        },        
-        {
-          label: 'Team 1',
-          field: 'side1Name',
-          sort: 'asc',
-          width: 150
-        },
-        {
-          label: 'Team 2',
-          field: 'side2Name',
-          sort: 'asc',
-          width: 150
-        },
-        {
-          label: 'League',
-          field: 'competitionName',
-          sort: 'asc',
-          width: 270
-        },
-        
-      ],
       rows: [],
     };
   }
@@ -66,10 +39,10 @@ class App extends Component {
   }
 
   render() {
-    const { error, isLoaded, columns, rows } = this.state;
+    const { error, isLoaded, rows } = this.state;
     return (
       <div className="App">
-        <DataTable columns={columns} rows={rows} />
+        <DataTable rows={rows} />
       </div>
     );
   }
