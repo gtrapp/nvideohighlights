@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/nvideohighlights/static/css/main.0d6dc19f.chunk.css",
+    "main.js": "/nvideohighlights/static/js/main.097da266.chunk.js",
+    "main.js.map": "/nvideohighlights/static/js/main.097da266.chunk.js.map",
+    "runtime-main.js": "/nvideohighlights/static/js/runtime-main.559870b2.js",
+    "runtime-main.js.map": "/nvideohighlights/static/js/runtime-main.559870b2.js.map",
+    "static/css/2.4058c193.chunk.css": "/nvideohighlights/static/css/2.4058c193.chunk.css",
+    "static/js/2.25bebb73.chunk.js": "/nvideohighlights/static/js/2.25bebb73.chunk.js",
+    "static/js/2.25bebb73.chunk.js.map": "/nvideohighlights/static/js/2.25bebb73.chunk.js.map",
+    "index.html": "/nvideohighlights/index.html",
+    "precache-manifest.af501a6d134ac733575b450c32ab2002.js": "/nvideohighlights/precache-manifest.af501a6d134ac733575b450c32ab2002.js",
+    "service-worker.js": "/nvideohighlights/service-worker.js",
+    "static/css/2.4058c193.chunk.css.map": "/nvideohighlights/static/css/2.4058c193.chunk.css.map",
+    "static/css/main.0d6dc19f.chunk.css.map": "/nvideohighlights/static/css/main.0d6dc19f.chunk.css.map",
+    "static/js/2.25bebb73.chunk.js.LICENSE": "/nvideohighlights/static/js/2.25bebb73.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.559870b2.js",
+    "static/css/2.4058c193.chunk.css",
+    "static/js/2.25bebb73.chunk.js",
+    "static/css/main.0d6dc19f.chunk.css",
+    "static/js/main.097da266.chunk.js"
+  ]
+}
