@@ -1,47 +1,34 @@
-import React, { Component } from 'react';
-
-
+import React, { Component } from "react";
 
 class SearchBar extends Component {
-    state = {
-        initialItems: [],
-        items: []
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: ""
+    };
 
-    filterList = (event) => {
-      let items = this.state.initialItems;
-      items = items.filter((item) => {
-        return item.toLowerCase().search(event.target.value.toLowerCase()) !== -1;
-      });
-      this.setState({items: items});
-    }
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
 
-    componentWillMount = () => {
-      this.setState({
-          initialItems: this.props.rows,
-          items: this.props.rows
-      })
-    }
+  handleInputChange = e => {
+    this.setState({ value: e.target.value });
+    this.props.searchTermChange(e.target.value);
+  };
 
-    render() {
-      return (
-        <div>
-          <form>
-                <input type="text" placeholder="Search" onChange={this.filterList}
-                style={{ width: '500px', height: '20px' }}
-                />
-          </form>
-          <div>
-            {
-                this.state.items.map(function(item) {
-                    return <div key={item}>{item}</div>
-                })
-            }
-            </div>
-        </div>
-      );
-    }
-};
+  render() {
+    return (
+      <div>
+        <form style={{margin: '20px'}} >
+          <input
+            placeholder="Search"
+            value={this.state.value}
+            onChange={this.handleInputChange}
+            style={{ width: "500px", height: "20px" }}
+          />
+        </form>
+      </div>
+    );
+  }
+}
 
-
-export default SearchBar
+export default SearchBar;
