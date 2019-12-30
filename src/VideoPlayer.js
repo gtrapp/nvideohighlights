@@ -12,29 +12,19 @@ class VideoPlayer extends Component {
     };
 
     let video;
-    let selectedRow;
 
-    if (this.props.selectedRow) {
-      selectedRow = this.props.selectedRow;
-    } else if (this.props.rows.length) {
-      selectedRow = this.props.rows[0];
-    }
-
-    if (selectedRow) {
-      video = [];
-      for (let i = 0; i < selectedRow.videos.length; i++) {
-        video.push(
-          selectedRow.videos[i].embed
-        );
-      }
+    if (this.props.selectedVideo) {
+      video = this.props.selectedVideo;
+    } else if (this.props.selectedRow && this.props.selectedRow.videos) {
+      video = this.props.selectedRow.videos[0].embed;
     } else {
-      video = "<h1></h1>";
+      video = <h1>placeholder</h1>
     }
 
     return (
       <div style={videoFrame}>
-         <div dangerouslySetInnerHTML={{ __html: video }} />
-       </div>
+        <div dangerouslySetInnerHTML={{ __html: video }} />
+      </div>
     );
   }
 }

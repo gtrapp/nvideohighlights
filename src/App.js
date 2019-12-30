@@ -15,9 +15,11 @@ class App extends Component {
       rows: [],
       columns: [],
       selectedRow: null,
+      selectedVideo: null,
       searchTerm: ""
     };
     this.searchTermChange = this.searchTermChange.bind(this);
+    this.selectVideo = this.selectVideo.bind(this);
   }
 
   componentDidMount() {
@@ -36,7 +38,8 @@ class App extends Component {
         });
 
         this.setState({
-          rows: result
+          rows: result,
+          selectedRow: result[0],
         });
       });
   };
@@ -78,6 +81,10 @@ class App extends Component {
     });
   };
 
+  selectVideo = video => {
+    console.log('selectVideo', video)
+  };
+
   render() {
     const { rows, columns, selectedRow, searchTerm } = this.state;
     let filteredRows;
@@ -99,8 +106,8 @@ class App extends Component {
 
     return (
       <div className="App">
-        <VideoPlayer selectedRow={selectedRow} rows={rows} />
-        <VideoThumbnail/>
+        <VideoPlayer selectedRow={selectedRow} />
+        <VideoThumbnail selectVideo={this.selectVideo} selectedRow={selectedRow} />
         <SearchBar searchTermChange={this.searchTermChange} />
         <DataTable
           rows={filteredRows}
