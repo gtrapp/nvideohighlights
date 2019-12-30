@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class VideoThumbnail extends Component {
 
   thumbClicked = e => {
-    console.log('thumbClicked', e);
+    this.props.changeSelectedVideo(e);
   };
 
   render() {
@@ -19,12 +19,11 @@ class VideoThumbnail extends Component {
     } else {
       thumbs = ['one', 'two', 'three'];
     }
-    console.log(thumbs)
 
     return (
       <div className="highlights-list">
         {thumbs.map((thumb) => (
-          <div key={thumb} className="video-thumb" onClick={this.thumbClicked}>
+          <div key={thumb} className="video-thumb" onClick={() => this.thumbClicked(thumb)}>
             <div dangerouslySetInnerHTML={{ __html: thumb }} />
           </div>
         ))}

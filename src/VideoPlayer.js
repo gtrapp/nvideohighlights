@@ -12,7 +12,7 @@ class VideoPlayer extends Component {
     };
 
     let video;
-
+    
     if (this.props.selectedVideo) {
       video = this.props.selectedVideo;
     } else if (this.props.selectedRow && this.props.selectedRow.videos) {
