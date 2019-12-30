@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 
-class VideoSelector extends Component {
+class VideoPlayer extends Component {
   render() {
     let videoFrame = {
       width: "40%",
@@ -39,4 +39,4 @@ class VideoSelector extends Component {
   }
 }
 
-export default VideoSelector;
+export default VideoPlayer;
