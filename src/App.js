@@ -71,7 +71,8 @@ class App extends Component {
 
   onClickRow = rowInfo => {
     this.setState({
-      selectedRow: rowInfo[0].original
+      selectedRow: rowInfo[0].original,
+      selectedVideo: null,
     });
   };
 
