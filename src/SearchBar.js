@@ -17,13 +17,12 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div>
+      <div className="search-bar">
         <form style={{margin: '20px'}} >
           <input
             placeholder="Search"
             value={this.state.value}
             onChange={this.handleInputChange}
-            style={{ width: "500px", height: "20px" }}
           />
         </form>
       </div>

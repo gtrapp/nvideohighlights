@@ -7,6 +7,7 @@ import SearchBar from "./SearchBar.js";
 import DataTable from "./Table.js";
 import VideoPlayer from "./VideoPlayer.js";
 import VideoThumbnail from "./VideoThumbnail.js";
+import logo from './scorebat_logo.png';
 
 class App extends Component {
   constructor(props) {
@@ -50,11 +51,11 @@ class App extends Component {
         accessor: "title"
       },
       {
-        Header: "Team1",
+        Header: "Team 1",
         accessor: "side1Name"
       },
       {
-        Header: "Team2",
+        Header: "Team 2",
         accessor: "side2Name"
       },
       {
@@ -62,7 +63,7 @@ class App extends Component {
         accessor: "competitionName"
       },
       {
-        Header: "# Videos",
+        Header: "Highlights",
         accessor: "numVideos"
       }
     ];
@@ -109,6 +110,8 @@ class App extends Component {
 
     return (
       <div className="App">
+        <img className="logo" src={logo} alt="Logo" />
+        <div className="header">ScoreBat Matches</div>
         <VideoPlayer selectedVideo={selectedVideo} selectedRow={selectedRow} />
         <VideoThumbnail changeSelectedVideo={this.changeSelectedVideo} selectedRow={selectedRow} />
         <SearchBar searchTermChange={this.searchTermChange} />

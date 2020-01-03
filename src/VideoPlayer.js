@@ -5,8 +5,8 @@ import React, { Component } from "react";
 class VideoPlayer extends Component {
   render() {
     let videoFrame = {
-      width: "40%",
-      height: "40%",
+      width: "50%",
+      height: "50%",
       margin: "auto",
       paddingTop: "20px"
     };
