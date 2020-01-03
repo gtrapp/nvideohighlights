@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&display=swap');
 
 body {
   margin: 0;
@@ -22,11 +22,13 @@ code {
   float: left;
   position: relative;
 }
+
 .header {
   top: 7px;
   line-height: 1.5em;
-  font-size: 2em;
+  font-size: 2.5em;
   position: relative;
   font-weight: 900;
+  letter-spacing: -2px;
   font-family: 'Source Sans Pro', sans-serif;
 }
