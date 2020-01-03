@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/nvideohighlights/static/css/main.8b0eb75f.chunk.css",
-    "main.js": "/nvideohighlights/static/js/main.74b2a464.chunk.js",
-    "main.js.map": "/nvideohighlights/static/js/main.74b2a464.chunk.js.map",
+    "main.css": "/nvideohighlights/static/css/main.13590800.chunk.css",
+    "main.js": "/nvideohighlights/static/js/main.b9e8af80.chunk.js",
+    "main.js.map": "/nvideohighlights/static/js/main.b9e8af80.chunk.js.map",
     "runtime-main.js": "/nvideohighlights/static/js/runtime-main.559870b2.js",
     "runtime-main.js.map": "/nvideohighlights/static/js/runtime-main.559870b2.js.map",
     "static/css/2.4058c193.chunk.css": "/nvideohighlights/static/css/2.4058c193.chunk.css",
-    "static/js/2.25bebb73.chunk.js": "/nvideohighlights/static/js/2.25bebb73.chunk.js",
-    "static/js/2.25bebb73.chunk.js.map": "/nvideohighlights/static/js/2.25bebb73.chunk.js.map",
+    "static/js/2.4e6c7900.chunk.js": "/nvideohighlights/static/js/2.4e6c7900.chunk.js",
+    "static/js/2.4e6c7900.chunk.js.map": "/nvideohighlights/static/js/2.4e6c7900.chunk.js.map",
     "index.html": "/nvideohighlights/index.html",
-    "precache-manifest.7b6c577cbce6c529b79f5ffd697297d0.js": "/nvideohighlights/precache-manifest.7b6c577cbce6c529b79f5ffd697297d0.js",
+    "precache-manifest.123e4162d475ce4b080a823092fa89ec.js": "/nvideohighlights/precache-manifest.123e4162d475ce4b080a823092fa89ec.js",
     "service-worker.js": "/nvideohighlights/service-worker.js",
     "static/css/2.4058c193.chunk.css.map": "/nvideohighlights/static/css/2.4058c193.chunk.css.map",
-    "static/css/main.8b0eb75f.chunk.css.map": "/nvideohighlights/static/css/main.8b0eb75f.chunk.css.map",
-    "static/js/2.25bebb73.chunk.js.LICENSE": "/nvideohighlights/static/js/2.25bebb73.chunk.js.LICENSE"
+    "static/css/main.13590800.chunk.css.map": "/nvideohighlights/static/css/main.13590800.chunk.css.map",
+    "static/js/2.4e6c7900.chunk.js.LICENSE": "/nvideohighlights/static/js/2.4e6c7900.chunk.js.LICENSE",
+    "static/media/scorebat_logo.png": "/nvideohighlights/static/media/scorebat_logo.ca18bd9f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.559870b2.js",
     "static/css/2.4058c193.chunk.css",
-    "static/js/2.25bebb73.chunk.js",
-    "static/css/main.8b0eb75f.chunk.css",
-    "static/js/main.74b2a464.chunk.js"
+    "static/js/2.4e6c7900.chunk.js",
+    "static/css/main.13590800.chunk.css",
+    "static/js/main.b9e8af80.chunk.js"
   ]
 }
