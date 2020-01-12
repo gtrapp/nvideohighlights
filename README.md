@@ -1,4 +1,4 @@
-Clone Repository to your local directory:
+## Clone Repository to your local directory:
 ### `git clone git@github.com:gtrapp/nvideohighlights.git`
 ### `npm install`
 
